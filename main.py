@@ -94,13 +94,13 @@ while True:
         
         if ratio_arah_lihat <= 0.3:
             if ratio_berkedip < 5.7:
-                cv2.putText(frame, "melihat ke kanan", (50, 100), cv2.FONT_HERSHEY_DUPLEX, 2, (0, 0, 255), 3)
+                cv2.putText(frame, "mencurigakan", (50, 100), cv2.FONT_HERSHEY_DUPLEX, 2, (0, 0, 255), 3)
         elif 0.3 < ratio_arah_lihat < 3:
             if ratio_berkedip < 5.7:
-                cv2.putText(frame, "melihat ke tengah", (50, 100), cv2.FONT_HERSHEY_DUPLEX, 2, (0, 0, 255), 3)
+                cv2.putText(frame, "tidak mencurigakan", (50, 100), cv2.FONT_HERSHEY_DUPLEX, 2, (0, 0, 255), 3)
         else:
             if ratio_berkedip < 5.7:
-                cv2.putText(frame, "melihat ke kiri", (50, 100), cv2.FONT_HERSHEY_DUPLEX, 2, (0, 0, 255), 3)
+                cv2.putText(frame, "mencurigakan", (50, 100), cv2.FONT_HERSHEY_DUPLEX, 2, (0, 0, 255), 3)
         # presentasi
         # cv2.imshow("Mata", eye)
         # cv2.imshow("Mata thereshold", threshold_eye) 2
